@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+/*police des titres*/
+
+
+h1,
+h2 {
+    font-family: 'Oswald' ;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/*taille du body */
+body {
+
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* header: bande couleur + menu de nav*/
+
+header {
+    
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #293E53;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+header h2 {
+    margin-left: 30px;
+    color: white;
+    font-size: 3em;
+
+}
+header nav {
+    flex: 1;
+}
+
+header ul {
+    margin-left: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: black;
+}
+
+/* Image + logo + slogan + boutton  */
+
+#hero {
+    height:88%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: url("../images/web-dev-ty.jpg") no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#logo {
+
+    height: 234px;
+    width: 170px;
+    background: url("../images/logo.png") no-repeat;
+
+}
+
+#slogan1 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+#hero button {
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #293E53;
+    border: none;
+    
+}
+
+#hero button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Our works + tableau image */
+
+#work {
+    padding-top: 5%;
+    margin-top: 760px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#work h1 {
+    text-align: center;
+}
+
+#work p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: grey;
+
+}
+
+#work img:hover {
+    transform: scale(1.1);
+}
+
+
+.taborder{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+/*  contact + formulaire */
+
+#contact {
+    margin-top: 5%;
+    height: 598px;
+    background-color: #293E53;
+}
+
+#contact h1 {
+    padding-top: 70px;
+    color: white;
+    text-align: center;
+}
+
+#contact p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+textarea {
+    border-radius: 6px;
+    width: 570px;
+    height: 188px;
+    border-radius: 6px;
+    border: none;
+    resize: none;
+}
+
+form {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#name {
+    margin-top: -40%;
+    width: 570px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+}
+
+#mail {
+    width: 570px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+}
+
+#droite {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#bout {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bout button {
+    height: 50px;
+    width: 90px;
+    color: white;
+    border: none;
+    background-color: #3454D1;
+    font-size: 1.5em;
+    border-radius: 6px;
+}
+
+#sujet {
+    border-radius: 6px;
+    height: 50px;
+    width: 440px;
+}
+
+/* footer: réseaux social, mention légal */
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* flêche permetant de remonter en haut de page */
+#arrow {
+    margin-top: -26px;
+    width: 52px;
+    height: 52px;
+    background-color: #E74C3C;
+    border-radius: 100%;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*animation hover pour les bouttons et liens vers les réseaux sociaux*/

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css2/style2.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+            <link rel=" icon"  href="../fil rouge/images/favicon-main.png"/>
+            
+        <title>LOUYAT Virgile</title>
+
+    </head>
+
+    <body>
+        <!--menu de navigation-->
+        <header>
+            <h2 id="home">LOUYAT Virgile</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./page/cv.html">CV</a>
+                    </li>
+                    <li>
+                        <a href="#works">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#cont">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--banniere-->
+        <div id='hero'>
+            <div id='logo'></div>
+            <div id='slogan1'>
+                <h1>
+                    
+                </h1>
+            </div>
+          
+        </div>
+
+        <!--Portfolio-->
+        <div id="work">
+            <h1 id="works">Mes travaux</h1>
+            <p>Voici quelques unes de mes réalisations</p>
+            <table>
+                <tr>
+                    <td>
+                        <p><a href="./page/solar.html"><img class="taborder" src="./images/solar.gif" alt="systeme solaire"></a></p>
+                    </td>
+                    <td>
+                        <p><a href="./page/mondrian.html"><img class="taborder" src="./images/mondrian-small-3-compressor.gif" alt="mondrian"></a></p>
+                    </td>
+                    <td>
+                        <p><a href="./page/flex.html"><img class="taborder" src="./images/flex.gif" alt="gotta flex"></a></p>
+                    </td>
+                    <td>
+                        <p><a href="./page/grid.html"><img class="taborder" src="./images/grid.gif" alt="Welcome to the grid"></a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+     
+        <!--formulaire-->
+        <div id="contact">
+            <h1 id="cont">Me contacter</h1>
+            <p>Pour toutes informations ou demandes<br>n'hesitez pas à me contacter</p>
+
+            <form action="">
+                <div id="texte">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+
+                <div id="droite">
+
+                    <div id="nom">
+
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Nom"/>
+
+                    </div>
+
+                    <div id="mail">
+
+                        <label for="mail"></label>
+                        <input type="text" name="mail" id="mail" placeholder="E-mail"/>
+
+                    </div>
+
+                    <div id="bout">
+                        <div id="sujet">
+
+                            <label for="sujet"></label>
+                            <input type="text" name="sujet" id="sujet" placeholder="Objet"/>
+    
+                        </div>
+                        <div>
+                            <button>SEND</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <!--footer avec le copyright les liens vers les réseaux sociaux et la flêche
+        permetant de remonter en haut de page-->
+        <footer>
+         
+            <div id="arrow">
+                <a href="#home">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!--animation "smooth"-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('a[href*=#]').on('click', function () { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 500; // Durée de l'animation (en ms)
+                    $('html, body').animate({
+                        scrollTop: $(page)
+                            .offset()
+                            .top
+                    }, speed, 'swing'); // Go
+                    return false;
+                });
+            });
+        </script>
+    </body>
+
+</html>
