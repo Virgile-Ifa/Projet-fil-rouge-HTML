@@ -1,0 +1,57 @@
+body{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+li{
+  list-style-type: none;
+}
+
+
+h1{  
+  color: white;
+  font-family: 'Oswald' ;
+}
+
+
+header{
+ 
+  height: 60px;
+  margin-left: auto;
+  margin-top: auto;
+  background-color: #293E53;
+  border: solid black 2px;
+
+}
+
+.container{
+  display: flex;
+  padding-top: 20px;
+}
+
+.nav{
+  width: 30%;
+ border: solid black 2px;
+
+}
+
+.contenu{
+  
+  width: 65%;
+ border: solid black 2px;
+ margin-left: 5%;
+}
+
+.formation, .experience, .competence{
+  margin: 30px;
+  border-bottom: black ridge 1px;
+}
+
+table{
+  margin: auto;
+  
+}
+table td  {
+  padding-left: 50px;
+}
