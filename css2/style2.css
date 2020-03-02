@@ -48,10 +48,11 @@ header nav {
 }
 
 header ul {
+    font-weight: 600;
     margin-left: 50%;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 header a {
@@ -72,10 +73,9 @@ header a:hover {
     display: flex;
     position: absolute;
     flex-direction: column;
-    background: url("../images/web-dev-ty.jpg") no-repeat;
+    background: url("../img/web-dev-ty.jpg") no-repeat;
     background-size: cover;
-    justify-content: space-evenly;
-    align-items: center;
+    
 
 }
 
@@ -254,4 +254,5 @@ footer {
     text-align: center;
 }
 
-/*animation hover pour les bouttons et liens vers les réseaux sociaux*/
+
+
